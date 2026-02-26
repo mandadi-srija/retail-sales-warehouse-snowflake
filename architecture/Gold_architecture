@@ -1,0 +1,28 @@
+flowchart TB
+ subgraph Bronze["Bronze"]
+        A1["STORE_SALES_RAW"]
+  end
+ subgraph Silver["Silver"]
+        B1["STORE_SALES_CLEAN"]
+        B2["CUSTOMER_DIM - SCD2"]
+        B3["FACT_SALES - Historical Join"]
+  end
+ subgraph Gold["Gold"]
+        C1["SALES_BY_STATE"]
+        C2["SALES_BY_YEAR"]
+        C3["MONTHLY_SALES"]
+        C4["TOP_STORES"]
+  end
+    A1 --> B1
+    B1 --> B3
+    B2 --> B3
+    B3 --> C1 & C2 & C3 & C4
+
+    style A1 stroke:#000000,fill:#FFE0B2
+    style B1 stroke:#FFFFFF
+    style B2 fill:#FFFFFF
+    style B3 fill:#FFFFFF
+    style C1 fill:#FFF9C4
+    style C2 fill:#FFF9C4
+    style C3 fill:#FFF9C4
+    style C4 fill:#FFF9C4
