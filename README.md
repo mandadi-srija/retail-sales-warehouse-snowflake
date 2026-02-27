@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+## CI/CD Workflow
+
+>>>>>>> a64e422 (readme)
 Branch Strategy:
 - dev → Development
 - main → Production-ready
@@ -37,4 +42,8 @@ The final implementation was recreated in Metabase based on the approved Figma w
 4. Selected final design and implemented in Metabase.
 
 
+<<<<<<< HEAD
    See `/docs/dashboard_design/` for wireframes and final dashboard screenshots.
+=======
+   See `/docs/dashboard_design/` for wireframes and final dashboard screenshots.
+>>>>>>> a64e422 (readme)
